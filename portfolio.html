@@ -282,6 +282,9 @@
     </div>
   </footer>
 
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
  
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -300,15 +303,15 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
-  <script>
+ <script>
   // Auto scroll slowly down
   const autoScroll = setInterval(() => {
     window.scrollBy(0, 4); // Scroll 1px
     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
       clearInterval(autoScroll); // Stop scrolling when bottom is reached
     }
-  }, 30); // Scr
-
+  }, 15); // Scroll every 10 milliseconds
+</script>
 </body>
 
 </html>
