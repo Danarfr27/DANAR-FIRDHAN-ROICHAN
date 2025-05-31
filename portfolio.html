@@ -302,6 +302,14 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
+  <script>
+  // Auto scroll slowly down
+  const autoScroll = setInterval(() => {
+    window.scrollBy(0, 4); // Scroll 1px
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+      clearInterval(autoScroll); // Stop scrolling when bottom is reached
+    }
+  }, 30); // Scr
 
 </body>
 
