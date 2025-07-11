@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Full Layar</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Memastikan body dan html mengambil tinggi penuh viewport */
+            overflow: hidden; /* Mencegah scrollbar jika gambar sedikit lebih besar */
+            display: flex; /* Menggunakan flexbox untuk centering */
+            justify-content: center; /* Memusatkan secara horizontal */
+            align-items: center; /* Memusatkan secara vertikal */
+            background-color: #000000; /* Warna latar belakang jika gambar tidak memuat atau ada ruang kosong */
+        }
+
+        img {
+            display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+            max-width: 100vw; /* Memastikan lebar gambar tidak melebihi lebar viewport */
+            max-height: 100vh; /* Memastikan tinggi gambar tidak melebihi tinggi viewport */
+            width: auto; /* Mempertahankan rasio aspek gambar */
+            height: auto; /* Mempertahankan rasio aspek gambar */
+            object-fit: contain; /* Memastikan gambar sepenuhnya terlihat di dalam container tanpa terpotong. Gunakan 'cover' jika Anda ingin gambar menutupi seluruh area bahkan jika ada bagian yang terpotong. */
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\MAJA\Documents\img\cv.jpg" alt="CV Danar Firdhan R">
+</body>
+</html>
