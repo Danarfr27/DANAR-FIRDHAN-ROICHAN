@@ -139,7 +139,13 @@
 
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+                <!--
+                  WhatsApp integration:
+                  - Replace the phone number in data-whatsapp-number with your WhatsApp number in international format (no + or leading zeros).
+                    Example for +62 821-2179-1193 -> 6282121791193
+                  - On submit this form will open WhatsApp (web or app) with a prefilled message instead of sending via server.
+                -->
+          <form id="contact-form" action="forms/contact.php" method="post" class="php-email-form" data-whatsapp-number="6282121791193" data-use-server="true" data-aos="fade-up" data-aos-delay="600">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -220,8 +226,10 @@
   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
+  <script src="js/whatsapp.js"></script>
   <script src="js/main.js"></script>
 
 </body>
 
 </html>
+
